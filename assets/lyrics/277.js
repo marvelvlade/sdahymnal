@@ -1,0 +1,46 @@
+export default `
+1
+I shall see the King,
+Where the angels sing,
+I shall see the King some day,
+In the better land,
+On the golden strand,
+And with Him shall ever stay.
+
+Refrain:
+In His glory, I shall see the King,
+And forever endless praises sing;
+’Twas on Calvary,
+Jesus died for me;
+I shall see the King some day.
+
+2
+In the land of song,
+In the glory-throng,
+Where there never comes a night,
+With my Lord once slain,
+I shall ever reign,
+In the glory land of light. 
+
+Refrain:
+In His glory, I shall see the King,
+And forever endless praises sing;
+’Twas on Calvary,
+Jesus died for me;
+I shall see the King some day.
+
+3
+I shall see the King,
+All my tributes bring,
+And shall look upon His face;
+Then my song shall be,
+How He ransomed me,
+And has kept me by His grace.
+
+Refrain:
+In His glory, I shall see the King,
+And forever endless praises sing;
+’Twas on Calvary,
+Jesus died for me;
+I shall see the King some day.
+`;

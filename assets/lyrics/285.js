@@ -1,0 +1,25 @@
+export default `
+1
+I have a Friend so precious, so very dear to me,
+He loves me with such tender love, He loves so faithfully;
+I could not live apart from Him, I love to feel Him nigh,
+And so we dwell together, my Lord and I. 
+
+2
+Sometimes I'm faint and weary, He knows that I am weak, 
+And as He bids me lean on Him, His help I gladly seek;
+He leads me in the paths of light, beneath a sunny sky,
+And so we walk together, my Lord and I. 
+
+3
+I tell Him all my sorrows, I tell Him all my joys,
+I tell Him all that pleases me, I tell Him what annoys;
+He tells me what I ought to do, He tells me how to try,
+And so we talk together, my Lord and I.
+
+4
+He knows that I am longing some weary soul to win, 
+And so He bids me go and speak the loving word for Him;
+He bids me tell His wondrous love, and why He came to die,
+And so we work together, my Lord and I.
+`;

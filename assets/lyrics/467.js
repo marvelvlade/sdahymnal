@@ -1,0 +1,7 @@
+export default `
+Dismiss us, Lord, with blessing, we pray;
+As from Thy worship we go our ways;
+Guide in life's conflicts, all through the day;
+Save in Thy kingdom, Thine be the praise.
+Amen.  
+`;
