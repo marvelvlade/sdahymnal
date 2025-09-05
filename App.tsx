@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import MainNavigator from './src/navigation/MainNavigator';
 import { ThemeProvider } from './src/theme/ThemeContext';
 import { LogBox } from 'react-native';
+import changeNavigationBarColor from 'react-native-navigation-bar-color';
 
 // Ignore all yellow box warnings (optional)
 LogBox.ignoreAllLogs();
@@ -14,6 +15,10 @@ ErrorUtils.setGlobalHandler((error, isFatal) => {
 });
 
 export default function App() {
+  useEffect(() => {
+    changeNavigationBarColor('#000000', false); // black navigation bar, dark icons
+  }, []);
+
   return (
     <ThemeProvider>
       <NavigationContainer>
