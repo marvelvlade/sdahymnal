@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, ActivityIndicator, Modal, Text, TouchableOpacity, StyleSheet, Linking } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import NetInfo from '@react-native-community/netinfo';
-import DeviceInfo from 'react-native-device-info';
+import currentVersionData from '../../version.json'; // adjust path if needed
 
 const AppLauncher = ({ navigation }) => {
   const [loading, setLoading] = useState(true);
@@ -10,6 +10,7 @@ const AppLauncher = ({ navigation }) => {
 
   const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.sda.hymnal.ph';
   const VERSION_JSON_URL = 'https://raw.githubusercontent.com/marvelvlade/sdahymnal/main/version.json';
+  const CURRENT_VERSION = currentVersionData.version; // local app version
 
   useEffect(() => {
     const checkSetup = async () => {
@@ -20,10 +21,12 @@ const AppLauncher = ({ navigation }) => {
         const netState = await NetInfo.fetch();
         if (netState.type === 'wifi' && netState.isConnected) {
           const latestVersion = await fetchLatestVersion();
-          const currentVersion = DeviceInfo.getVersion();
+          const lastFetchedVersion = await AsyncStorage.getItem('lastFetchedVersion');
 
-          if (latestVersion && currentVersion !== latestVersion) {
+          // Compare current app version with latest from GitHub
+          if (latestVersion && CURRENT_VERSION !== latestVersion && latestVersion !== lastFetchedVersion) {
             setShowUpdateModal(true);
+            await AsyncStorage.setItem('lastFetchedVersion', latestVersion); // Update stored version
             return; // Stop navigation until modal is handled
           }
         }
@@ -48,8 +51,8 @@ const AppLauncher = ({ navigation }) => {
         console.log('Failed to fetch version.json');
         return null;
       }
-      const text = await response.text();
-      return text.trim(); // version.json only contains the version string
+      const data = await response.json(); // ✅ parse JSON
+      return data.latestVersion?.trim() ?? null;
     } catch (err) {
       console.log('Error fetching latest version:', err);
       return null;
