@@ -2,7 +2,7 @@ export default `
 1
 Sa tuktok ng isang gulod na mababa,
 Ay may isang krus na luma,
-Doo'y ipinako si Kristong dakila,
+Doo'y ipinako si Cristong dakila,
 Patungkol sa sala ng madla!
 
 Koro:
@@ -14,7 +14,7 @@ Ng isang putong na makinang.
 2
 Oh ang krus na yaong inaalimura,
 Sa akin ay mahalaga,
-Sa pagka't si Kristo ang Siyang nagdala,
+Sa pagka't si Cristo ang Siyang nagdala,
 Doon sa bundok ng Golgota.
 
 Koro:

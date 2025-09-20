@@ -20,7 +20,7 @@ O! Krist'yanong kawal hayo sa laban,
 Krus ni Jesus ang ating sinusundan.
 
 3
-Ang kay Kristong kawal hukbong kalakhan,
+Ang kay Cristong kawal hukbong kalakhan,
 Ay nangapipisang lakip ang tibay;
 Sa pakikilaban at nang magdiwang,
 Nang pagtagumpayan madlang kaaway!

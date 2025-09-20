@@ -21,7 +21,7 @@ Magalak kang tinatanggap, Sabado ng Diyos.
 
 3
 Ang araw na ito'y atin nang gamitin,
-Sa pag-awit kay Kristo at pananalangin;
+Sa pag-awit kay Cristo at pananalangin;
 Jesus, ang pangako Mong kami'y kupkupkupin,
 S'yang sa buhay na ito'y tanging mahal namin.
 

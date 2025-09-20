@@ -1,7 +1,7 @@
 export default `
 1
 Ang iglesya'y may isang kinasasaligan,
-Ito'y si Jesu-Kristong sa kanya'y Lumalang;
+Ito'y si Jesu-Cristong sa kanya'y Lumalang;
 Naparito't ang dugo, buhay inialay,
 Upang iglesya'y maging asawa N'yang banal.
 

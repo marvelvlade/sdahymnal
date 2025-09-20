@@ -21,5 +21,5 @@ Magpupuring may pag-ibig.
 Kasinlawak nitong mundo,
 Utos ng Diyos na totoo;
 Sintibay ng isang bato,
-Katotohanan ni Kristo.
+Katotohanan ni Cristo.
 `;

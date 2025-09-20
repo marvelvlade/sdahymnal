@@ -8,7 +8,10 @@ import HymnItem from '../components/HymnItem';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export default function HymnalScreen({ navigation }) {
+// ✅ Memoize HymnItem inside import
+const MemoizedHymnItem = React.memo(HymnItem);
+
+export default function HymnalScreen({ navigation, route }) {
   const { isDark } = useTheme();
   const styles = isDark ? darkStyles : lightStyles;
 
@@ -43,6 +46,15 @@ export default function HymnalScreen({ navigation }) {
     return unsubscribe;
   }, [navigation]);
 
+  // ✅ Handle "openFavorites" param from Dashboard
+  useEffect(() => {
+    if (route.params?.openFavorites) {
+      setSelectedLanguage('Favorites');
+      flatListRef.current?.scrollToOffset({ offset: 0, animated: false });
+      navigation.setParams({ openFavorites: false });
+    }
+  }, [route.params, navigation]);
+
   // Filter hymns
   const filteredHymns = useMemo(() => {
     return hymnals.filter(item => {
@@ -61,14 +73,20 @@ export default function HymnalScreen({ navigation }) {
     });
   }, [searchQuery, selectedLanguage, favoriteSet]);
 
-  // Navigation
+  // Navigation to single hymn
   const handlePress = useCallback(
     (item) => navigation.navigate('SingleHymnal', { id: item.id, title: item.title }),
     [navigation]
   );
 
+  // ✅ Stable renderItem
+  const renderItem = useCallback(
+    ({ item }) => <MemoizedHymnItem item={item} onPress={handlePress} styles={styles} />,
+    [handlePress, styles]
+  );
+
   // Show / hide "Go to Top" button on scroll
-  const handleScroll = (event) => {
+  const handleScroll = useCallback((event) => {
     const offsetY = event.nativeEvent.contentOffset.y;
     if (offsetY > 200 && !showScrollTop) {
       setShowScrollTop(true);
@@ -78,11 +96,11 @@ export default function HymnalScreen({ navigation }) {
         setShowScrollTop(false)
       );
     }
-  };
+  }, [showScrollTop, fadeAnim]);
 
-  const scrollToTop = () => {
+  const scrollToTop = useCallback(() => {
     flatListRef.current?.scrollToOffset({ offset: 0, animated: true });
-  };
+  }, []);
 
   return (
     <View style={styles.container}>
@@ -132,12 +150,11 @@ export default function HymnalScreen({ navigation }) {
         ref={flatListRef}
         data={filteredHymns}
         keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => (
-          <HymnItem item={item} onPress={handlePress} styles={styles} />
-        )}
-        initialNumToRender={20}
-        maxToRenderPerBatch={20}
-        windowSize={10}
+        renderItem={renderItem} // ✅ stable reference
+        initialNumToRender={15}
+        maxToRenderPerBatch={10}
+        windowSize={7}
+        removeClippedSubviews={true} // ✅ huge perf boost
         getItemLayout={(data, index) => ({ length: 52, offset: 52 * index, index })}
         contentContainerStyle={{ paddingBottom: 20 }}
         onScroll={handleScroll}
@@ -158,14 +175,15 @@ export default function HymnalScreen({ navigation }) {
   );
 }
 
-// ✅ Prebuilt styles
+
+// ✅ Styles remain the same
 const baseStyles = {
   subheader: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     borderBottomWidth: 1,
     elevation: 5,
-    marginBottom: 10,
+    zIndex: 10,
     paddingVertical: 5,
   },
   faveText: { alignItems: 'center', justifyContent: 'center' },

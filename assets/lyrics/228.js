@@ -15,7 +15,7 @@ At ang l'walhati sa Kanya'y ibigay.
 Pangako ng Diyos sa naniniwala,
 Ay katubusang sa dugo may bisa;
 Ang magsisising pinakamasama,
-Patatawarin ni Kristong dakila.
+Patatawarin ni Cristong dakila.
 
 Koro:
 Purihin si Jesus, tinig Nya'y pakinggan;

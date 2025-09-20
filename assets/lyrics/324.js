@@ -1,6 +1,6 @@
 export default `
 1
-Oh! Kristong kaibig-ibig,
+Oh! Cristong kaibig-ibig,
 Na nagpasan ng sakit,
 Ang habag Mo ay ilalawit,
 Sa aming nangagwaglit!
@@ -20,7 +20,7 @@ Upang kamtan mong sagana,
 Ang kay Jehobang awa!
 
 3
-Si Kristo'y Siyang tinapay,
+Si Cristo'y Siyang tinapay,
 Ito ay siyang tunay;
 Siya ang daan at buhay,
 Ng kaluluwang banday;

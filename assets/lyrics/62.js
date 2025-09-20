@@ -3,16 +3,16 @@ export default `
 Dinggin at umawit Mga anghel sa langit,
 "Luwalhati sa Haring sumilang sa daigdig!"
 Sa tagumpay ng langit, tayo ay makianib,
-Ang pagsilang ni Kristo'y itanyag na masugid.
+Ang pagsilang ni Cristo'y itanyag na masugid.
 
 Koro:
 "L'walhati sa sumilang,
 Hari ng daigdigan."
 
 2
-Si Kristong sinasamba, Panginoo'ng walang haggan,
+Si Cristong sinasamba, Panginoo'ng walang haggan,
 Sa sabsaba'y sumilang sa saliw ng awitan,
-Si Kristo ay dumatal, Emmanuel ang Pangalan!
+Si Cristo ay dumatal, Emmanuel ang Pangalan!
 
 Koro:
 "L'walhati sa sumilang,

@@ -6,7 +6,7 @@ Kaluluwa ko'y aliwin,
 Lungoy ko'y dinggin.
 
 Koro:
-Kristo! Kristo!
+Cristo! Cristo!
 Ako'y pakingggan,
 Kung iba'y tinatawagan,
 H'wag akong iwan.
@@ -18,7 +18,7 @@ Pawang hirap madlang sakit
 Ang tinitiis!
 
 Koro:
-Kristo! Kristo!
+Cristo! Cristo!
 Ako'y pakingggan,
 Kung iba'y tinatawagan,
 H'wag akong iwan.
@@ -30,7 +30,7 @@ Kaluluwa ko'y hawakan,
 H'wag pababayaan!
 
 Koro:
-Kristo! Kristo!
+Cristo! Cristo!
 Ako'y pakingggan,
 Kung iba'y tinatawagan,
 H'wag akong iwan.
@@ -42,7 +42,7 @@ Sa lupa'y aking ginhawa,
 Hanggang langit pa!
 
 Koro:
-Kristo! Kristo!
+Cristo! Cristo!
 Ako'y pakingggan,
 Kung iba'y tinatawagan,
 H'wag akong iwan.

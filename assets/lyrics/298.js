@@ -14,7 +14,7 @@ Ay akin araw-araw.
 2
 Sa puso ko'y may liwanag,
 Na tangi sa lahat,
-Ang sa akin ay naggawad,
+Ang sa akin ay nag-gawad,
 Si Jesus na liyag.
 
 Koro:

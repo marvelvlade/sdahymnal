@@ -7,7 +7,7 @@ Sa Ama kong maawain!
 Sa panahong natutukso,
 Sa mga daya ng lilo,
 Tumawag at pasaklolo,
-Sa kamay ni Jesu-Kristo!
+Sa kamay ni Jesu-Cristo!
 
 2
 Sa oras ng panalangin,

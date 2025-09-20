@@ -11,7 +11,7 @@ Kapayapaang matamis, kaloob ng pag-ibig.
 
 2
 Kapayapaa'y nakamit,
-Kay Kristong sa krus nagsakit,
+Kay Cristong sa krus nagsakit,
 Kamatayan N'ya'y kapalit,
 Ng handog N'yang pag-ibig.
 

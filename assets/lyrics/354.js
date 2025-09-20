@@ -1,6 +1,6 @@
 export default `
 1
-Magtiwala sa pangako ni Kristo,
+Magtiwala sa pangako ni Cristo,
 Magpakailanman S'ya papurihan,
 Luwalhati ang aking aawitin,
 Magtiwala sa Diyos t'wit'wina.

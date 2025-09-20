@@ -7,7 +7,7 @@ Sa huling araw.
 
 Koro:
 Sa pagparitong muli,
-Ni Kristong hari,
+Ni Cristong hari,
 Ang hangad ko't laging mithi'y,
 Doon lumagi.
 
@@ -19,7 +19,7 @@ N'ya kung dumating.
 
 Koro:
 Sa pagparitong muli,
-Ni Kristong hari,
+Ni Cristong hari,
 Ang hangad ko't laging mithi'y,
 Doon lumagi.
 
@@ -31,7 +31,7 @@ Ang taong tapat.
 
 Koro:
 Sa pagparitong muli,
-Ni Kristong hari,
+Ni Cristong hari,
 Ang hangad ko't laging mithi'y,
 Doon lumagi.
 
@@ -43,7 +43,7 @@ Ng ganting nais.
 
 Koro:
 Sa pagparitong muli,
-Ni Kristong hari,
+Ni Cristong hari,
 Ang hangad ko't laging mithi'y,
 Doon lumagi.
 `;

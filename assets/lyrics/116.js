@@ -33,7 +33,7 @@ Pag ang Hari'y dumatal.
 Pumanaw na minamahal,
 Dulot sa'tin ay lumbay,
 Bawat luha'y mapapawi,
-Kung si Kristo'y dumatal,
+Kung si Cristo'y dumatal,
 Huwag tayong manlupaypay,
 Dahil sa sala't lumbay,
 Ating alamin ang bukas,

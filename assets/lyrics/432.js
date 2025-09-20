@@ -1,6 +1,6 @@
 export default `
 1
-Manindig kay Jesus! 
+Manindig kay Jesus!
 Kayong kawal ng krus;
 Watawat N'ya'y itaas,
 Di dapat makilos;

@@ -1,6 +1,6 @@
 export default `
 1
-Si Kristo ay nabuhay, Aleluya!
+Si Cristo ay nabuhay, Aleluya!
 Tao't anghel nagsaysay, Aleluya!
 Isigaw ang tagumpay, Aleluya!
 Umawit, santinakpan, Aleluya!
@@ -19,7 +19,7 @@ Sa Paraiso'y nasok, Aleluya!
 
 4
 Tayo'y pumailanlang, Aleluya!
-Sundan si Kristong hirang, Aleluya!
+Sundan si Cristong hirang, Aleluya!
 Sa wangis N'ya nilalang, Aleluya!
 Atin ang kalangitan, Aleluya!
 `;

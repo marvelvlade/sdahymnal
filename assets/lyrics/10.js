@@ -1,7 +1,7 @@
 export default `
 1
 Kayong malilinis, matuwa at umawit;
-Krus ni Kristo'y iwagayway sa rurok ng langit.
+Krus ni Cristo'y iwagayway sa rurok ng langit.
 
 Koro:
 Matuwa, matuwa,
@@ -33,7 +33,7 @@ Matuwa at umawit.
 
 5
 Patuloy nga kayong matuwa at umawit;
-Krus ni Kristo'y iwagayway sa rurok ng langit.
+Krus ni Cristo'y iwagayway sa rurok ng langit.
 
 Koro:
 Matuwa, matuwa,

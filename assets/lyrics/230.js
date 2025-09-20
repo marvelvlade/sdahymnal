@@ -7,19 +7,19 @@ Gaya ng tansong ahas sa ilang.
 
 Koro:
 May buhay para sa 'yo,
-Kung tumanaw kay Kristo,
+Kung tumanaw kay Cristo,
 Kaya't pagsikapan mo,
 Tumingin sa Kalbaryo.
 
 2
 Kahit gaanong dagsa ng tukso,
 Ay pananagumpayan mo,
-Kung titingin lamang kay Kristo,
+Kung titingin lamang kay Cristo,
 Lakas at ligaya'y gaya'y sasa iyo.
 
 Koro:
 May buhay para sa 'yo,
-Kung tumanaw kay Kristo,
+Kung tumanaw kay Cristo,
 Kaya't pagsikapan mo,
 Tumingin sa Kalbaryo.
 
@@ -31,7 +31,7 @@ Ng sinumang susunod sa aral.
 
 Koro:
 May buhay para sa 'yo,
-Kung tumanaw kay Kristo,
+Kung tumanaw kay Cristo,
 Kaya't pagsikapan mo,
 Tumingin sa Kalbaryo.
 `;

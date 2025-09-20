@@ -26,7 +26,7 @@ Ng lihim ko ma't hayag!
 3
 Kung magtapat ako't iwan,
 Ang mga kasalanan,
-Kay Kristo'y tatanggap naman,
+Kay Cristo'y tatanggap naman,
 Ng t'wa't kapayapaan!
 
 Koro:

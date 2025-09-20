@@ -15,7 +15,7 @@ Na tinanging ipangilin.
 Ang pagpupuri'y awitin,
 Sa Panginoong Maykapal,
 Araw na kapahingahan,
-Sa kay Kristo ay tanggapin.
+Sa kay Cristo ay tanggapin.
 
 4
 Ang Sabado'y siyang tunay,

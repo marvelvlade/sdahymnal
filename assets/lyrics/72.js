@@ -9,7 +9,7 @@ Matulog nang panatag, matulog nang panatag.
 Tahimik ang gabi, liwanag nang lahat;
 Mga anghel ay nagpahayag,
 Sa mga pastol na nagalak;
-"Aleluya sa Hari! Sa kay Kristong marilag."
+"Aleluya sa Hari! Sa kay Cristong marilag."
 
 3
 Tahimik ang gabi, Diyos Anak, namalas;
@@ -21,5 +21,5 @@ Nang sumilang Ka, Jesus, Sa sang-maliwanag.
 Tahimik ang gabi, tala ay sumikat;
 Tayo'y magsi-awit na lahat,
 Mga anghel saliwang ganap,
-Sumilang na sa hirap, Kristong Tagapagligtas.
+Sumilang na sa hirap, Cristong Tagapagligtas.
 `;

@@ -25,7 +25,7 @@ Malapit nang bumaba S'ya,
 Libu-libong anghel ang abay Niya,
 Palmang tagumpay ay dala.
 Hindi tatagal, maririnig mo na,
-Ang kay Kristong ibabadya,
+Ang kay Cristong ibabadya,
 Aliping tapat gawa mo'y maganda,
 Sa 'yong Pangino'y magsaya.
 

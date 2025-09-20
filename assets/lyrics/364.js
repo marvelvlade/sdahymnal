@@ -10,7 +10,7 @@ Sa Batong buhay,
 Magtayo tayo;
 Sa Batong buhay, 
 Magtayo tayo;
-Sa Batong si Kristo.
+Sa Batong si Cristo.
 
 2
 May nagtatayo sa buhanginan,
@@ -23,7 +23,7 @@ Sa Batong buhay,
 Magtayo tayo;
 Sa Batong buhay, 
 Magtayo tayo;
-Sa Batong si Kristo.
+Sa Batong si Cristo.
 
 3
 Kayo'y magtayo sa Batong buhay,
@@ -36,5 +36,5 @@ Sa Batong buhay,
 Magtayo tayo;
 Sa Batong buhay, 
 Magtayo tayo;
-Sa Batong si Kristo.
+Sa Batong si Cristo.
 `;

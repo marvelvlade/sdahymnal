@@ -1,25 +1,25 @@
 export default `
 1
-Dinggin mo ang pahayag, Kristo'y nagliligtas;
-Ang tuwa'y ilaganap, Kristo'y nagliligtas.
+Dinggin mo ang pahayag, Cristo'y nagliligtas;
+Ang tuwa'y ilaganap, Cristo'y nagliligtas.
 Ibalita sa lahat kahit magtawid dagat,
-Ito'y sa atin atas, Kristo'y nagliligtas!
+Ito'y sa atin atas, Cristo'y nagliligtas!
 
 2
-Sa gitna ng bagabag Kristo'y nagliligtas;
-Sa nagkasala'y hayag Kristo'y nagliligtas;
+Sa gitna ng bagabag Cristo'y nagliligtas;
+Sa nagkasala'y hayag Cristo'y nagliligtas;
 Mag-awit kapuluan, tumugan karagatan,
-Sa mundo'y kagalakan, Kristo'y nagliligtas!
+Sa mundo'y kagalakan, Cristo'y nagliligtas!
 
 3
-Awitin nang malakas, Kristo'y nagliligtas;
-Sa kamatayang hamak Kristo'y nagliligtas.
+Awitin nang malakas, Cristo'y nagliligtas;
+Sa kamatayang hamak Cristo'y nagliligtas.
 Saysayin nang marahan sa pusong nagdaramdam,
-Kahit hanggang libingan Kristo'y nagliligtas!
+Kahit hanggang libingan Cristo'y nagliligtas!
 
 4
-Dagli nang ilaganap Kristo'y nagliligtas;
-Mga bansa'y magalak Kristo'y nagliligtas.
+Dagli nang ilaganap Cristo'y nagliligtas;
+Mga bansa'y magalak Cristo'y nagliligtas.
 Ating ipagsigawan tinamong kaligtasan,
-Awiting may tagumpay, Kristo'y nagliligtas!
+Awiting may tagumpay, Cristo'y nagliligtas!
 `;

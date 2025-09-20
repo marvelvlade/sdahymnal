@@ -1,5 +1,5 @@
-// screens/SingleHymnalScreen.js
 import React, { useEffect, useState, useRef, useCallback } from 'react';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
   View,
   Text,
@@ -17,37 +17,34 @@ import TrackPlayer, {
   Event,
 } from 'react-native-track-player';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import hymnals from '../../assets/mappings/hymnals.json';
 import lyricsFiles from '../../assets/mappings/lyricsFiles';
 import audioFiles from '../../assets/mappings/audioFiles';
 import { useTheme } from '../theme/ThemeContext';
 import notesBg from '../../assets/images/notes-bg.png';
 import Footer from '../components/Footer';
+import { setFavoritesCache, getFavorites } from '../../src/utils/cache'; // ✅ import cache functions
 
 export default function SingleHymnalScreen({ route }) {
   const { id } = route.params;
-  const hymnData = hymnals.find(h => h.id === id);
+  const hymnData = hymnals.find(h => Number(h.id) === Number(id));
   const playbackState = usePlaybackState();
   const { position, duration } = useProgress();
-
   const [lyrics, setLyrics] = useState('');
   const [playerReady, setPlayerReady] = useState(false);
   const isMountedRef = useRef(true);
-
   const { fontSize, isDark, hidePlayerByDefault } = useTheme();
-  const [showPlayer, setShowPlayer] = useState(null);
-  const slideAnim = useRef(new Animated.Value(0)).current;
+
+  const initialShow = hidePlayerByDefault !== null ? !hidePlayerByDefault : false;
+  const [showPlayer, setShowPlayer] = useState(initialShow);
+  const slideAnim = useRef(new Animated.Value(initialShow ? 1 : 0)).current;
+  const didMount = useRef(false);
 
   useEffect(() => {
-    if (hidePlayerByDefault !== null) {
-      const shouldShow = !hidePlayerByDefault;
-      setShowPlayer(shouldShow);
+    if (!didMount.current) {
+      didMount.current = true;
+      return;
     }
-  }, [hidePlayerByDefault]);
-
-  useEffect(() => {
-    if (showPlayer === null) return;
     Animated.timing(slideAnim, {
       toValue: showPlayer ? 1 : 0,
       duration: 300,
@@ -55,7 +52,7 @@ export default function SingleHymnalScreen({ route }) {
     }).start();
   }, [showPlayer]);
 
-  // --- Favorite state with persistence ---
+  // --- Favorite state ---
   const [favorite, setFavorite] = useState(false);
 
   useEffect(() => {
@@ -70,11 +67,26 @@ export default function SingleHymnalScreen({ route }) {
     loadFavorite();
   }, [id]);
 
+  // ✅ Update global cache + AsyncStorage
   const toggleFavorite = async () => {
     try {
       const newFav = !favorite;
       setFavorite(newFav);
       await AsyncStorage.setItem(`fav-${id}`, newFav ? 'true' : 'false');
+
+      // Update cache
+      const currentFavs = await getFavorites(hymnals);
+      let updatedFavs;
+      if (newFav) {
+        // add current hymn if not already in cache
+        updatedFavs = currentFavs.some(h => h.id === hymnData.id)
+          ? currentFavs
+          : [hymnData, ...currentFavs];
+      } else {
+        // remove from cache
+        updatedFavs = currentFavs.filter(h => h.id !== hymnData.id);
+      }
+      setFavoritesCache(updatedFavs);
     } catch (e) {
       console.error('Error saving favorite:', e);
     }
@@ -218,9 +230,7 @@ export default function SingleHymnalScreen({ route }) {
         const trimmed = line.trim();
         if (
           /^\d+$/.test(trimmed) ||
-          /^(Chorus|Koro|Huling Koro|Refrain|Last Refrain):?\b/i.test(
-            trimmed
-          )
+          /^(Chorus|Koro|Huling Koro|Refrain|Last Refrain):?\b/i.test(trimmed)
         ) {
           return (
             <Text
@@ -241,10 +251,6 @@ export default function SingleHymnalScreen({ route }) {
   if (!hymnData)
     return <Text style={{ padding: 20 }}>Hymn not found.</Text>;
 
-  if (showPlayer === null) {
-    return <View style={{ flex: 1, backgroundColor: isDark ? '#303030' : '#fff' }} />;
-  }
-
   const playerHeight = 120;
   const animatedHeight = slideAnim.interpolate({
     inputRange: [0, 1],
@@ -255,10 +261,8 @@ export default function SingleHymnalScreen({ route }) {
     <View style={styles.container}>
       <View style={styles.subContainer}>
         <Image source={notesBg} style={styles.bgImage} resizeMode="contain" />
-
         <ScrollView style={styles.lyricsBox}>{renderLyrics()}</ScrollView>
 
-        {/* Floating buttons when player is hidden */}
         {!showPlayer && (
           <>
             <TouchableOpacity
@@ -280,7 +284,6 @@ export default function SingleHymnalScreen({ route }) {
         )}
       </View>
 
-      {/* Animated player container */}
       <Animated.View style={[styles.playerContainer, { height: animatedHeight }]}>
         <Slider
           style={{ width: '100%' }}
@@ -299,7 +302,6 @@ export default function SingleHymnalScreen({ route }) {
         </View>
 
         <View style={styles.buttonRow}>
-          {/* Favorite button inside player */}
           <TouchableOpacity onPress={toggleFavorite}>
             <Icon
               name={favorite ? 'heart' : 'heart-o'}
@@ -345,7 +347,6 @@ const baseStyles = {
   subContainer: {
     flex: 1,
     paddingHorizontal: 15,
-    paddingBottom: 30,
     position: 'relative',
   },
   bgImage: {
@@ -359,6 +360,7 @@ const baseStyles = {
   lyricsBox: {
     flex: 1,
     zIndex: 1,
+    paddingBottom: 30,
   },
   playerContainer: {
     overflow: 'hidden',

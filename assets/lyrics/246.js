@@ -33,7 +33,7 @@ Balita tungkol kay Jesus na liyag.
 Siyon, Siya ay muling paririto,
 Kaya biyaya N'ya'y itanyag mo;
 Huwag tulutang maligtaang totoo,
-Ang sinumang tinubos ni Kristo.
+Ang sinumang tinubos ni Cristo.
 
 Koro:
 Ang balita ay ipahayag,

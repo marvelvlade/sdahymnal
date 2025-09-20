@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Image, Platform, StatusBar } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import HymnalScreen from '../screens/HymnalScreen';
 import SingleHymnalScreen from '../screens/SingleHymnalScreen';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -12,6 +13,11 @@ export default function HymnalNavigator() {
   const { isDark } = useTheme();
 
   const styles = useMemo(() => (isDark ? darkStyles : lightStyles), [isDark]);
+
+  const insets = useSafeAreaInsets();
+
+  // If safe-area returns 0 (rare), fallback to StatusBar.currentHeight on Android
+  const topInset = insets.top || (Platform.OS === 'android' ? StatusBar.currentHeight || 0 : 0);
 
   return (
     <Stack.Navigator initialRouteName="HymnalList">
@@ -28,7 +34,7 @@ export default function HymnalNavigator() {
 
           return {
             header: () => (
-              <View style={styles.headerContainer}>
+              <View style={[styles.headerContainer, { paddingTop: topInset, height: 60 + topInset, }]}>
                 <Image
                   source={require('../../assets/images/sda-logo.png')}
                   style={styles.logo}
@@ -62,7 +68,6 @@ const baseStyles = {
   headerContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    height: 60,
     paddingHorizontal: 15,
     justifyContent: 'space-between',
   },

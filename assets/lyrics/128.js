@@ -26,8 +26,8 @@ At Siya'y putungan!
 4
 Tayo nawa'y makasama,
 Noong karamihan,
-Sa Kanya'y mangayupapa,
-At Siya'y putungan!
-Sa Kanya'y mangayupapa,
-At Siya'y putungan!
+Nang masamba natin Siya,
+At tuloy putungan!
+Nang masamba natin Siya,
+At tuloy putungan!
 `;

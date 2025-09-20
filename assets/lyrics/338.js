@@ -27,7 +27,7 @@ Di ka matutupok ng mga ningas,
 Nalilinang sa iyong kasakdalan.
 
 5
-Ang kalul'wang kay Kristo humihilig,
+Ang kalul'wang kay Cristo humihilig,
 Hindi babayaang siya'y magahis,
 Ng kaaway niya na sakdal bangis,
 Pagka't lagi siyang tinatangkilik.

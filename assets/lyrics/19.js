@@ -6,7 +6,7 @@ Sa umagang ito’y hain,
 Ang puso kong angkin.  
 
 2  
-Panginoon Jesu-Kristo,  
+Panginoon Jesu-Cristo,
 Ako’y pakinggan Mo;  
 Ipahayag sa Diyos Ama,  
 Ang bawat hiling ko.  

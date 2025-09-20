@@ -27,7 +27,7 @@ Mga tanda'y masdan.
 Sa mga paang putik at bakal,
 Marupok, mahina't di tatagal;
 Anong kasunod na matatanghal?
-Ang pagdating ni Kristo kong mahal.
+Ang pagdating ni Cristo kong mahal.
 
 Koro:
 Ang mga malahulang tanda ay masdan,

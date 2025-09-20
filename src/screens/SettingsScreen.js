@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useMemo } from 'react';
+import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import {
   View,
   Text,
@@ -8,6 +8,7 @@ import {
   FlatList,
   ScrollView,
   Linking,
+  TextInput,
 } from 'react-native';
 import { useTheme } from '../../src/theme/ThemeContext';
 import Header from '../components/Header';
@@ -15,15 +16,14 @@ import Footer from '../components/Footer';
 import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { useNavigation } from '@react-navigation/native';
+import { getNickname, setNickname as setNicknameCache } from '../../src/utils/cache'; // ✅ Import cache functions
 
 export default function SettingsScreen() {
-  // updated: added hidePlayerByDefault and setHidePlayerByDefault
-const {
-  isDark, toggleTheme,
-  fontSize, setFontSize,
-  hidePlayerByDefault, toggleHidePlayerByDefault
-} = useTheme();
-
+  const {
+    isDark, toggleTheme,
+    fontSize, setFontSize,
+    hidePlayerByDefault, toggleHidePlayerByDefault
+  } = useTheme();
 
   const navigation = useNavigation();
   const styles = isDark ? darkStyles : lightStyles;
@@ -31,6 +31,30 @@ const {
   const fontSizes = useMemo(() => [16, 20, 24, 30], []);
 
   const [fontSizeDropdownVisible, setFontSizeDropdownVisible] = useState(false);
+
+  // Nickname state
+  const [nickname, setNickname] = useState('');
+  const [nicknameModalVisible, setNicknameModalVisible] = useState(false);
+  const [tempNickname, setTempNickname] = useState('');
+
+  // Load nickname from global cache
+  useEffect(() => {
+    (async () => {
+      const saved = await getNickname();
+      setNickname(saved);
+    })();
+  }, []);
+
+  // Save nickname and update global cache
+  const saveNickname = async () => {
+    try {
+      setNickname(tempNickname);
+      await setNicknameCache(tempNickname); // ✅ Updates global cache and AsyncStorage
+      setNicknameModalVisible(false);
+    } catch (e) {
+      console.log('Failed to save nickname', e);
+    }
+  };
 
   const handleEmailPress = useCallback(() => {
     const subject = encodeURIComponent('SDA Hymnal App Feedback');
@@ -89,8 +113,25 @@ const {
           </TouchableOpacity>
         </View>
 
-        {/* Theme toggle & font size */}
+        {/* Settings */}
         <View style={styles.functionDivision}>
+          {/* Nickname */}
+          <View style={styles.settingRow}>
+            <Text style={styles.label}>Nickname</Text>
+            <TouchableOpacity
+              style={styles.dropdownButton}
+              onPress={() => {
+                setTempNickname(nickname);
+                setNicknameModalVisible(true);
+              }}
+            >
+              <Text style={styles.dropdownText}>
+                {nickname || 'Set nickname'}
+              </Text>
+              <Feather style={styles.arrowRight} name="chevron-right" />
+            </TouchableOpacity>
+          </View>
+
           {/* Dark mode */}
           <View style={styles.settingRow}>
             <Text style={styles.label}>Dark mode</Text>
@@ -109,26 +150,28 @@ const {
               style={styles.dropdownButton}
               onPress={() => setFontSizeDropdownVisible(true)}
             >
-              <Text style={[styles.dropdownText]}>{fontSize}</Text>
-              <Feather style={ styles.arrowRight } name="chevron-right" />
+              <Text style={styles.dropdownText}>{fontSize}</Text>
+              <Feather style={styles.arrowRight} name="chevron-right" />
             </TouchableOpacity>
           </View>
 
-          {/* Hide player by default (NEW) */}
+          {/* Hide player by default */}
           <View style={styles.settingRow}>
             <Text style={styles.label}>Auto-hide player</Text>
-<TouchableOpacity
-  style={[
-    styles.toggleButton,
-    hidePlayerByDefault ? styles.toggleOn : styles.toggleOff
-  ]}
-  onPress={toggleHidePlayerByDefault}
->
-  <Text style={[styles.toggleText, hidePlayerByDefault ? styles.hiddenOn : styles.hiddenOff ]}>
-    {hidePlayerByDefault ? 'ON' : 'OFF'}
-  </Text>
-</TouchableOpacity>
-
+            <TouchableOpacity
+              style={[
+                styles.toggleButton,
+                hidePlayerByDefault ? styles.toggleOn : styles.toggleOff
+              ]}
+              onPress={toggleHidePlayerByDefault}
+            >
+              <Text style={[
+                styles.toggleText,
+                hidePlayerByDefault ? styles.hiddenOn : styles.hiddenOff
+              ]}>
+                {hidePlayerByDefault ? 'ON' : 'OFF'}
+              </Text>
+            </TouchableOpacity>
           </View>
         </View>
 
@@ -168,9 +211,39 @@ const {
           </View>
         </TouchableOpacity>
       </Modal>
+
+      {/* Nickname modal */}
+      <Modal
+        transparent
+        visible={nicknameModalVisible}
+        animationType="slide"
+        onRequestClose={() => setNicknameModalVisible(false)}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={styles.nicknameBox}>
+            <Text style={styles.label}>Enter Nickname</Text>
+            <TextInput
+              style={styles.textInput}
+              value={tempNickname}
+              onChangeText={setTempNickname}
+              placeholder="Type your nickname"
+              placeholderTextColor={isDark ? "#aaa" : "#666"}
+            />
+            <View style={{ flexDirection: 'row', justifyContent: 'flex-end', marginTop: 10 }}>
+              <TouchableOpacity onPress={() => setNicknameModalVisible(false)} style={styles.cancelBtn}>
+                <Text style={styles.cancelText}>Cancel</Text>
+              </TouchableOpacity>
+              <TouchableOpacity onPress={saveNickname} style={styles.saveBtn}>
+                <Text style={styles.saveText}>Save</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+      </Modal>
     </View>
   );
 }
+
 
 // ================== Base Styles ==================
 const baseStyles = {
@@ -205,22 +278,28 @@ const baseStyles = {
   label: { fontSize: 16 },
   toggleButton: { paddingVertical: 2, paddingHorizontal: 20, borderRadius: 20, borderWidth: 1 },
   toggleText: { fontSize: 14, fontWeight: 'bold' },
-  dropdownButton: { flexDirection: 'row', alignItems: 'center', },
+  dropdownButton: { flexDirection: 'row', alignItems: 'center' },
   modalOverlay: { flex: 1, backgroundColor: 'rgba(0,0,0,0.3)', justifyContent: 'center', alignItems: 'center' },
   dropdownBox: { width: 150, borderRadius: 8, paddingVertical: 8, elevation: 5 },
   dropdownItem: { paddingVertical: 10, paddingHorizontal: 15 },
-  dropdownItemText: { fontSize: 16,  },
-  dropdownText: { textAlign: 'right', },
-  arrowRight: { fontSize: 18, marginLeft: 10, },
+  dropdownItemText: { fontSize: 16 },
+  dropdownText: { textAlign: 'right' },
+  arrowRight: { fontSize: 18, marginLeft: 10 },
   feedbackBox: { padding: 10 },
   feedbackButtons: { marginTop: 10, flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center' },
   feedbackBtn: { flexDirection: 'row', alignItems: 'center', paddingVertical: 8, paddingHorizontal: 15, borderRadius: 20 },
   feedbackBtnText: { marginLeft: 8, fontSize: 14, fontWeight: 'bold' },
   feedbackParagraph: { fontSize: 16, marginVertical: 10 },
   orText: { fontSize: 16 },
+  nicknameBox: { width: 300, borderRadius: 10, padding: 20, backgroundColor: '#fff', elevation: 10 },
+  textInput: { borderBottomWidth: 1, fontSize: 16, padding: 5, marginTop: 10 },
+  cancelBtn: { marginRight: 15 },
+  cancelText: { fontSize: 16 },
+  saveBtn: { backgroundColor: '#0098ee', paddingHorizontal: 15, paddingVertical: 5, borderRadius: 5 },
+  saveText: { color: '#fff', fontSize: 16, fontWeight: 'bold' },
 };
 
-// ================== Light/Dark color overrides ==================
+// ================== Light/Dark overrides ==================
 const lightStyles = StyleSheet.create({
   ...baseStyles,
   settingsContainer: { ...baseStyles.content, backgroundColor: '#fff' },
@@ -240,6 +319,9 @@ const lightStyles = StyleSheet.create({
   feedbackBtnText: { ...baseStyles.feedbackBtnText, color: '#fff' },
   feedbackParagraph: { ...baseStyles.feedbackParagraph, color: '#222' },
   orText: { ...baseStyles.orText, color: '#000' },
+  nicknameBox: { ...baseStyles.nicknameBox, backgroundColor: '#fff' },
+  textInput: { ...baseStyles.textInput, borderColor: '#ccc', color: '#000' },
+  cancelText: { ...baseStyles.cancelText, color: '#000' },
 });
 
 const darkStyles = StyleSheet.create({
@@ -253,11 +335,14 @@ const darkStyles = StyleSheet.create({
   toggleOff: { ...baseStyles.toggleButton, backgroundColor: '#ccc', borderColor: '#aaa' },
   toggleText: { ...baseStyles.toggleText, color: '#fff' },
   dropdownText: { ...baseStyles.label, color: '#fff' },
-  arrowRight: { ...baseStyles.arrowRight, color: '#000' },
+  arrowRight: { ...baseStyles.arrowRight, color: '#fff' },
   dropdownBox: { ...baseStyles.dropdownBox, backgroundColor: '#747474' },
   dropdownItemText: { ...baseStyles.dropdownItemText, color: '#fff' },
-  feedbackBtn: { ...baseStyles.feedbackBtn, backgroundColor: '#0098ee' },
+  feedbackBtn: { ...baseStyles.feedbackBtn, backgroundColor: '#031f24' },
   feedbackBtnText: { ...baseStyles.feedbackBtnText, color: '#fff' },
   feedbackParagraph: { ...baseStyles.feedbackParagraph, color: '#ccc' },
   orText: { ...baseStyles.orText, color: '#fff' },
+  nicknameBox: { ...baseStyles.nicknameBox, backgroundColor: '#444' },
+  textInput: { ...baseStyles.textInput, borderColor: '#aaa', color: '#fff' },
+  cancelText: { ...baseStyles.cancelText, color: '#fff' },
 });

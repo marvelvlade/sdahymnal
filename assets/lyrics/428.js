@@ -9,7 +9,7 @@ Koro:
 Sulong, kawal, bandila'y itanghal,
 Patuloy sa pakikilaban;
 Sulong! Sulong! At ipagsigawang,
-Si Kristo ang ating Kapitan.
+Si Cristo ang ating Kapitan.
 
 2
 Lupigin agad likong pangwasak,
@@ -21,7 +21,7 @@ Koro:
 Sulong, kawal, bandila'y itanghal,
 Patuloy sa pakikilaban;
 Sulong! Sulong! At ipagsigawang,
-Si Kristo ang ating Kapitan.
+Si Cristo ang ating Kapitan.
 
 3
 Diyos na dakila, tulungan nawa,
@@ -33,5 +33,5 @@ Koro:
 Sulong, kawal, bandila'y itanghal,
 Patuloy sa pakikilaban;
 Sulong! Sulong! At ipagsigawang,
-Si Kristo ang ating Kapitan.
+Si Cristo ang ating Kapitan.
 `;

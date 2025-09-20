@@ -10,7 +10,7 @@ export default function Footer({ activeTab, hidden }) {
 
   const tabs = useMemo(
     () => [
-      { name: 'Home', icon: 'home' },
+      { name: 'Dashboard', icon: 'th-large' },
       { name: 'Hymnal', icon: 'music' },
       { name: 'Settings', icon: 'cog' },
     ],

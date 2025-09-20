@@ -42,6 +42,7 @@ export default function WhatsNew() {
     {
       title: 'New Features!',
       items: [
+        'Added a Dashboard that shows your daily hymn, quick access to favorites, and reminds you of Midweek, Vesper, and Sabbath—including a warm “Happy Sabbath!” greeting.',
         'Added a seek function to the player, including fast forward and rewind controls.',
         'Sorted hymns by language (Filipino and English).',
         'Introduced Favorites tab for easier access to saved hymns.',

@@ -6,8 +6,8 @@ Na ang Panginoong Jesus ay darating,
 Upang ang Kanya'y tanggapin.
 
 Koro:
-O Pangino'ng Jesus, kailan pa maisisigaw? 
-Na si Kristo'y nagbalik na,
+O Pangino'ng Jesus, kailan pa maisisigaw?
+Na si Cristo'y nagbalik na,
 Aleluya! Amen, Aleluya! Amen.
 
 2
@@ -17,8 +17,8 @@ Ay maliwanag sa l'walhati N'ya't ningning,
 Pag ang Kanya'y tanggapin.
 
 Koro:
-O Pangino'ng Jesus, kailan pa maisisigaw? 
-Na si Kristo'y nagbalik na,
+O Pangino'ng Jesus, kailan pa maisisigaw?
+Na si Cristo'y nagbalik na,
 Aleluya! Amen, Aleluya! Amen.
 
 3
@@ -28,7 +28,7 @@ Sa kalangitan dadalhin tayong tunay,
 Si Jesus ang kaakbay.
 
 Koro:
-O Pangino'ng Jesus, kailan pa maisisigaw? 
-Na si Kristo'y nagbalik na,
+O Pangino'ng Jesus, kailan pa maisisigaw?
+Na si Cristo'y nagbalik na,
 Aleluya! Amen, Aleluya! Amen.
 `;

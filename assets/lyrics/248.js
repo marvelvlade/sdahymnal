@@ -24,7 +24,7 @@ Ang ating puso ay liligaya,
 Ang pinagpaguran kung makita na.
 
 3
-Ang binhi ni Kristong sa ati'y iniwan,
+Ang binhi ni Cristong sa ati'y iniwan,
 Ihasik din kahit may kahirapan,
 Ang pagod at luha kung mangakaraan,
 Ang bungang kasunod ay katuwaan.

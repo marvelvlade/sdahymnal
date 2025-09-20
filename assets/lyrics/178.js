@@ -33,7 +33,7 @@ Buksan ang Iyong dibdib,
 Sa nagbabalik!
 
 4
-Ang kamatayan ni Kristo'y,
+Ang kamatayan ni Cristo'y,
 S'ya kong pag-asa,
 At ngayon sa kandili Mo'y,
 Nagbabalik na.

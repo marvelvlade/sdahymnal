@@ -10,7 +10,7 @@ Mga pag-asa't pangamba,
 Ngayo'y nagkaugnay.
 
 2
-Si Kristo ay sumilang,
+Si Cristo ay sumilang,
 Habang nagbabantay,
 Ang mga anghel sa langit,
 Nang bu'ng pagmamahal.

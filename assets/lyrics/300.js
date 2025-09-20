@@ -25,7 +25,7 @@ Makikita mong mahal ka sa Kanya.
 
 3
 Sa saganang yaman ng ibang tao,
-Higit ang yamang pangako ni Kristo,
+Higit ang yamang pangako ni Cristo,
 Ang gantimpala na laan sa iyo,
 Higit sa lahat ng yaman ng mundo.
 

@@ -16,7 +16,7 @@ When the roll is called up yonder, I'll be there.
 2
 On that bright and cloudless morning,
 When the dead in Christ shall rise,
-And the glory of His resurection share;
+And the glory of His resurrection share;
 When His chosen ones shall gather,
 To their home beyond the skies,
 And the roll is called up yonder, I'll be there.

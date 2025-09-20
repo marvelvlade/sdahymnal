@@ -17,7 +17,7 @@ Ang ating pagsusumikap,
 Bigo na sanang lubos.
 Inyong itatanong,
 Sinong tao Siya?
-S'ya is Jesu-Kristong,
+S'ya is Jesu-Cristong,
 Hindi nag-iiba,
 At magwawagi t'wina.
 

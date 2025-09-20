@@ -1,14 +1,20 @@
+// Header.js (updated)
 import React, { useMemo } from 'react';
-import { View, Text, Image, TextInput, StyleSheet } from 'react-native';
+import { View, Text, Image, TextInput, StyleSheet, Platform, StatusBar } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTheme } from '../theme/ThemeContext';
 
 export default function Header({ title, showSearch = false, searchQuery, setSearchQuery }) {
   const { isDark } = useTheme();
+  const insets = useSafeAreaInsets();
+
+  // If safe-area returns 0 (rare), fallback to StatusBar.currentHeight on Android
+  const topInset = insets.top || (Platform.OS === 'android' ? StatusBar.currentHeight || 0 : 0);
 
   const styles = useMemo(() => (isDark ? darkStyles : lightStyles), [isDark]);
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { paddingTop: topInset, height: 60 + topInset }]}>
       {/* Logo + Title */}
       <View style={styles.logoTitleWrapper}>
         <Image
@@ -32,10 +38,10 @@ export default function Header({ title, showSearch = false, searchQuery, setSear
   );
 }
 
-// ================= Base Styles =================
+// base & themed styles (unchanged except remove hard-coded height)
 const baseStyles = {
   container: {
-    height: 60,
+    // height removed here; we compute below to include inset
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 15,
@@ -62,7 +68,6 @@ const baseStyles = {
   },
 };
 
-// ================= Light Theme =================
 const lightStyles = StyleSheet.create({
   ...baseStyles,
   container: { ...baseStyles.container, backgroundColor: '#0098ee' },
@@ -71,7 +76,6 @@ const lightStyles = StyleSheet.create({
   placeholder: { color: '#888' },
 });
 
-// ================= Dark Theme =================
 const darkStyles = StyleSheet.create({
   ...baseStyles,
   container: { ...baseStyles.container, backgroundColor: '#031f24' },

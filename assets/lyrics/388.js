@@ -21,5 +21,5 @@ Hipuin ako't pagalingin!
 Kalooban Mo'y siyang sundin!
 Katauhan ko'y 'Yong angkinin!
 Sa Espiritu Mo'y puspusin,
-Nang si Kristo'y makita sa 'kin!
+Nang si Cristo'y makita sa 'kin!
 `;

@@ -24,7 +24,7 @@ Ako'y tanggapin, sa Iyong piling,
 Ang tanging aking hiling ako ay linisin.
 
 4
-Purihin ng lahat si Kristong nagkalag,
+Purihin ng lahat si Cristong nagkalag,
 Sa salang gapos sa lahat upang makaligtas.
 
 Koro:

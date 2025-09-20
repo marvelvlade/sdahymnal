@@ -31,7 +31,7 @@ Ay pag-ibig!
 
 3
 Oh kaluluwang waglit at mapapahamak,
-Kay Kristo ka lumapit nang ikaw'y maligtas; 
+Kay Cristo ka lumapit nang ikaw'y maligtas;
 Ang ating Panginoo'y walang laging hangad,
 Kundi ang malayo ka sa bagabag.
 

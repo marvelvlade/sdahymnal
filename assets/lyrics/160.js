@@ -9,7 +9,7 @@ O kay ganda, kay inam, salita ng buhay,
 O kay ganda, kay inam, salita ng buhay!
 
 2
-Si Jesu-Kristo'y nagbigay salita ng buhay;
+Si Jesu-Cristo'y nagbigay salita ng buhay;
 Dinggin mo, makasalanan, salita ng buhay.
 Tayo'y inaakit patungo sa langit;
 

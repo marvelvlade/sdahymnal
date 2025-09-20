@@ -232,7 +232,7 @@ One God forever more.
         hymns: '''
 1
 Kayong malilinis, matuwa at umawit;
-Krus ni Kristo'y iwagayway sa rurok ng langit.
+Krus ni Cristo'y iwagayway sa rurok ng langit.
 
 Koro:
 Matuwa,	Matuwa, 
@@ -252,7 +252,7 @@ Sa tuwa't kapighatian, sa gabi at araw.
 
 5
 Patuloy nga kayong matuwa at umawit;
-Krus ni Kristo'y iwagayway sa rurok ng langit.
+Krus ni Cristo'y iwagayway sa rurok ng langit.
         '''),
     Hymnal(
       id: '11',
@@ -438,7 +438,7 @@ Is the wonderful love of Jesus.
 Kagalaka'y kabanalan
 Ang sa puso'y siyang sigaw,
 Nguni't sinong may awitan
-Ng sa kay Kristong pagmamahal.
+Ng sa kay Cristong pagmamahal.
 
 Koro:
 Oh! Pag-ibig na dakila!
@@ -1323,7 +1323,7 @@ At ang pag-ibig Niyang walang hanggan.
 
 3
 Oh kaluluwang waglit at mapapahamak
-Kay Kristo ka lumapit nang ikaw'y maligtas; 
+Kay Cristo ka lumapit nang ikaw'y maligtas;
 Ang ating Panginoo'y walang laging hangad
 Kundi ang malayo ka sa bagabag.
         '''),
@@ -1539,7 +1539,7 @@ Magpupuring may pag-ibig.
 Kasinlawak nitong mundo
 Utos ng Diyos na totoo;
 Sintibay ng isang bato
-Katotohanan ni Kristo.
+Katotohanan ni Cristo.
     '''),
     Hymnal(
       id: '49',
@@ -1990,16 +1990,16 @@ Hark! the herald angels sing,
 Dinggin at umawit Mga anghel sa langit,
 "Luwalhati sa Haring Sumilang sa daigdig!"
 Sa tagumpay ng langit, Tayo ay makianib,
-Ang pagsilang ni Kristo'y Itanyag na masugid.
+Ang pagsilang ni Cristo'y Itanyag na masugid.
 
 Koro:
 "L'walhati sa sumilang 
 Hari ng daigdigan."
 
 2
-Si Kristong sinasamba, Panginoo'ng walang haggan,
+Si Cristong sinasamba, Panginoo'ng walang haggan,
 Sa sabsaba'y sumilang Sa saliw ng awitan,
-Si Kristo ay dumatal, Emmanuel ang pangalan!
+Si Cristo ay dumatal, Emmanuel ang pangalan!
 
 3
 Batiin ang Prinsipe! Na araw ng Katwiran!
@@ -2173,7 +2173,7 @@ Masdan ang Haring sumilang sa inyo!
 Koro:
 Siya'y sambahin natin,
 Siya'y sambahin natin,
-Si Kristong Panginoo'y sambahin!
+Si Cristong Panginoo'y sambahin!
 
 2
 Koro ng mga anghel, kayo'y umawit,
@@ -2248,7 +2248,7 @@ Mga pag-asa't pangamba
 Ngayo'y nagkaugnay.
 
 2
-Si Kristo ay sumilang 
+Si Cristo ay sumilang
 Habang nagbabantay
 Ang mga anghel sa langit
 Nang bu'ng pagmamahal.
@@ -2331,7 +2331,7 @@ Matulog nang panatag, Matulog nang panatag.
 Tahimik ang gabi, Liwanag nang lahat;
 Mga anghel ay nagpahayag
 Sa mga pastol na nagalak;
-"Aleluya sa Hari! Sa kay Kristong marilag."
+"Aleluya sa Hari! Sa kay Cristong marilag."
 
 3
 Tahimik ang gabi, Diyos Anak, namalas;
@@ -2343,7 +2343,7 @@ Nang sumilang Ka, Jesus, Sa sang-maliwanag.
 Tahimik ang gabi, Tala ay sumikat;
 Tayo'y magsi-awit na lahat,
 Mga anghel saliwang ganap,
-Sumilang na sa hirap, Kristong Tagapagligtas.
+Sumilang na sa hirap, Cristong Tagapagligtas.
     '''),
     Hymnal(
         id: '73',
@@ -2691,7 +2691,7 @@ Where His glory forever I'll share
 1
 Sa tuktok ng isang gulod na mababa
 Ay may isang krus na luma,
-Doo'y ipinako si Kristong dakila
+Doo'y ipinako si Cristong dakila
 Patungkol sa sala ng madla!
 
 Koro:
@@ -2703,7 +2703,7 @@ Ng isang putong na makinang.
 2
 Oh ang krus na yaong inaalimura
 Sa akin ay mahalaga,
-Sa pagka't si Kristo ang Siyang nagdala
+Sa pagka't si Cristo ang Siyang nagdala
 Doon sa bundok ng Golgota.
 
 3
@@ -2749,7 +2749,7 @@ Ours the cross, the grave, the skies, Alleluia!
         title: "Si Cristo ay Nabuhay",
         hymns: '''
 1
-Si Kristo ay nabuhay, Aleluya!
+Si Cristo ay nabuhay, Aleluya!
 Tao't anghel nagsaysay, Aleluya!
 Isigaw ang tagumpay, Aleluya!
 Umawit, santinakpan, Aleluya!
@@ -2768,7 +2768,7 @@ Sa Paraiso'y nasok, Aleluya!
 
 4
 Tayo'y pumailanlang, Aleluya!
-Sundan si Kristong hirang, Aleluya!
+Sundan si Cristong hirang, Aleluya!
 Sa wangis N'ya nilalang, Aleluya!
 Atin ang kalangitan, Aleluya!
     '''),
@@ -3173,7 +3173,7 @@ Tell me the old, old story: "Christ Jesus makes thee whole."
         title: "Saysayin Mo sa Akin",
         hymns: '''
 1
-Saysayin mo sa akin ang kay Kristong buhay
+Saysayin mo sa akin ang kay Cristong buhay
 Saysayin ang pag-ibig N'yang walang kapantay,
 Saysayin mong marahan, saysaying malinaw
 Ngayong ako'y mahina at makasalanan.
@@ -3194,7 +3194,7 @@ Sa lahat ng sandali ng aking bagabag.
 Saysayin mo sa akin kung ang akala mo
 Ako'y ibig tangin ng hibo ng mundo,
 At kung nalalapit na ang luwalhati Mo,
-Muling sabihin sa 'kin: "Ligtas ka kay Kristo."
+Muling sabihin sa 'kin: "Ligtas ka kay Cristo."
     '''),
     Hymnal(
         id: '97',
@@ -3376,7 +3376,7 @@ Upang ang Kanya'y tanggapin.
 
 Koro:
 O Pangino'ng Jesus, kailan Pamaisisigaw? 
-Na si Kristo'y nagbalik na,
+Na si Cristo'y nagbalik na,
 Aleluya! Amen, Aleluya! Amen.
 
 2
@@ -3721,7 +3721,7 @@ Sa huling araw.
 
 Koro:
 Sa pagparitong muli
-Ni Kristong hari
+Ni Cristong hari
 Ang hangad ko't laging mithi'y
 Doon lumagi.
 
@@ -5342,7 +5342,7 @@ Ako'y tinawagan sa ikababanal
 At upang pagtiyagaan nang langit makamtan.
 
 4
-Purihin ng lahat si Kristong nagkalag
+Purihin ng lahat si Cristong nagkalag
 Sa salang gapos sa lahat upang makaligtas.
       ''',
     ),
@@ -5399,7 +5399,7 @@ O kay ganda, kay inam, salita ng buhay,
 O kay ganda, kay inam, salita ng buhay!
 
 2
-Si Jesu-kristo'y nagbigay salita ng buhay;
+Si Jesu-Cristo'y nagbigay salita ng buhay;
 Dinggin mo, makasalanan, salita ng buhay.
 Tayo'y inaakit patungo sa langit;
 
@@ -5741,7 +5741,7 @@ upang h'wag mawakawak?
 
 Koro:
 Tumatawag, tumatawag, 
-Si Kristong liyag 
+Si Cristong liyag
 Sa makasalanang lahat.
 
 2
@@ -6021,7 +6021,7 @@ At sa Iyo, Panginoo'y
 Nagbabalik na.
 
 4
-Ang kamatayan ni Kristo'y
+Ang kamatayan ni Cristo'y
 S'ya kong pag-asa,
 At ngayon sa kandili Mo'y
 Nagbabalik na.
@@ -7695,28 +7695,28 @@ Jesus saves, Jesus saves.
       title: "Dinggin Mo ang Pahayag",
       hymns: '''
 1
-Dinggin mo ang pahayag, Kristo'y nagliligtas;
-Ang tuwa'y ilaganap, Kristo'y nagliligtas.
+Dinggin mo ang pahayag, Cristo'y nagliligtas;
+Ang tuwa'y ilaganap, Cristo'y nagliligtas.
 Ibalita sa lahat kahit magtawid dagat,
-Ito'y sa atin atas, Kristo'y nagliligtas!
+Ito'y sa atin atas, Cristo'y nagliligtas!
 
 2
-Sa gitna ng bagabag Kristo'y nagliligtas;
-Sa nagkasala'y hayag Kristo'y nagliligtas;
+Sa gitna ng bagabag Cristo'y nagliligtas;
+Sa nagkasala'y hayag Cristo'y nagliligtas;
 Mag-awit kapuluan, tumugan karagatan,
-Sa mundo'y kagalakan, Kristo'y nagliligtas!
+Sa mundo'y kagalakan, Cristo'y nagliligtas!
 
 3
-Awitin nang malakas, Kristo'y nagliligtas;
-Sa kamatayang hamak Kristo'y nagliligtas.
+Awitin nang malakas, Cristo'y nagliligtas;
+Sa kamatayang hamak Cristo'y nagliligtas.
 Saysayin nang marahan sa pusong nagdaramdam
-Kahit hanggang libingan Kristo'y nagliligtas!
+Kahit hanggang libingan Cristo'y nagliligtas!
 
 4
-Dagli nang ilaganap Kristo'y nagliligtas;
-Mga bansa'y magalak Kristo'y nagliligtas.
+Dagli nang ilaganap Cristo'y nagliligtas;
+Mga bansa'y magalak Cristo'y nagliligtas.
 Ating ipagsigawan tinamong kaligtasan
-Awiting may tagumpay, Kristo'y nagliligtas!
+Awiting may tagumpay, Cristo'y nagliligtas!
       ''',
     ),
     Hymnal(
@@ -7774,7 +7774,7 @@ At ang l'walhati sa Kanya'y ibigay.
 Pangako ng Diyos sa naniniwala,
 Ay katubusang sa dugo may bisa;
 Ang magsisising pinakamasama,
-Patatawarin ni Kristong dakila.
+Patatawarin ni Cristong dakila.
 
 3
 Pawang dakila ang turo Nya't gawa,
@@ -7965,7 +7965,7 @@ And the great church victorious shall be the church at rest.
         hymns: '''
 1
 Ang iglesya'y may isang kinasasaligan,
-Ito'y si Jesu-kristong sa kanya'y Lumalang;
+Ito'y si Jesu-Cristong sa kanya'y Lumalang;
 Naparito't ang dugo, buhay inialay,
 Upang iglesya'y maging asawa N'yang banal.
 
@@ -8379,7 +8379,7 @@ Nang sila'y magtagumpay sa lubos.
 Siyon, Siya ay muling paririto,
 Kaya biyaya N'ya'y itanyag mo;
 Huwag tulutang maligtaang totoo
-Ang sinumang tinubos ni Kristo.
+Ang sinumang tinubos ni Cristo.
       ''',
     ),
     Hymnal(
@@ -8438,7 +8438,7 @@ Aanihin natin pagsapit ng araw
 Ang bunga ng ating  pinagpagalan.
 
 3
-Ang binhi ni Kristong sa ati'y iniwan
+Ang binhi ni Cristong sa ati'y iniwan
 Ihasik din kahit may kahirapan,
 Ang pagod at luha kung mangakaraan
 Ang bungang kasunod ay katuwaan.
@@ -9068,7 +9068,7 @@ Tayo'y paiinumin sa bukal ng Buhay.
 
 3
 Ang araw na ito'y atin nang gamitin
-Sa pag-awit kay Kristo at pananalangin;
+Sa pag-awit kay Cristo at pananalangin;
 Jesus, ang pangako Mong kami'y kupkupkupin
 S'yang sa buhay na ito'y tanging mahal namin.
         '''),
@@ -10624,7 +10624,7 @@ Sa Ama kong maawain!
 Sa panahong natutukso
 Sa mga daya ng lilo,
 Tumawag at pasaklolo
-Sa kamay ni Jesu-Kristo!
+Sa kamay ni Jesu-Cristo!
 
 2
 Sa oras ng panalangin,
@@ -11009,7 +11009,7 @@ thou wilt find a solace there.
       title: "Oh! Cristong Kaibig-ibig",
       hymns: '''
 1
-Oh! Kristong kaibig-ibig
+Oh! Cristong kaibig-ibig
 Na nagpasan ng sakit,
 Ang habag Mo ay ilalawit
 Sa aming nangagwaglit!
@@ -11029,7 +11029,7 @@ Upang kamtan mong sagana
 Ang kay Jehobang awa!
 
 3
-Si Kristo'y siyang tinapay,
+Si Cristo'y siyang tinapay,
 Ito ay siyang tunay;
 Siya ang daan at buhay
 Ng kaluluwang banday;
@@ -11337,7 +11337,7 @@ Ang ating pagsusumikap,
 Bigo na sanang lubos.
 Inyong itatanong,
 Sinong tao Siya?
-S'ya is Jesu-kristong 
+S'ya is Jesu-Cristong
 Hindi nag-iiba,
 At magwawagi t'wina.
 
@@ -11565,7 +11565,7 @@ Di ka matutupok ng mga Ningas
 Nalilinang sa iyong kasakdalan
 
 5
-Ang kalul'wang kay Kristo humihilig
+Ang kalul'wang kay Cristo humihilig
 Hindi babayaang siya'y magahis
 Ng kaaway niya na sakdal bangis
 Pagka't lagi siyang tinatangkilik.
@@ -11985,7 +11985,7 @@ Ng ngalang Jesus na tanyag
 Higit sa larawang lahat.
 
 Koro:
-Si Kristo'y batong matibay
+Si Cristo'y batong matibay
 Na aking kinasaligan
 Di gaya ng buhanginan!
 
@@ -11998,7 +11998,7 @@ Aking pinanghahawakan.
 3
 Sa pangakong sinalita
 At sa dugong masagana
-Ni Kristo na mapagpala 
+Ni Cristo na mapagpala
 Lubos ang aking tiwala.
 
 4
@@ -12070,7 +12070,7 @@ Sala ko ay nahugas!
 3
 Kung magtapat ako't iwan
 Ang mga kasalanan,
-Kay Kristo'y tatanggap naman
+Kay Cristo'y tatanggap naman
 Ng t'wa't kapayapaan!
 
 4
@@ -12438,7 +12438,7 @@ Sa Batong buhay,
 Magtayo tayo;
 Sa Batong buhay, 
 magtayo tayo;
-Sa Batong si Kristo.
+Sa Batong si Cristo.
 
 2
 May nagtatayo sa buhanginan,
@@ -13283,7 +13283,7 @@ Hipuin ako't pagalingin!
 Kalooban Mo'y siyang sundin!
 Katauhan ko'y 'Yong angkinin!
 Sa Espiritu Mo'y puspusin,
-Nang si Kristo'y makita sa 'kin!
+Nang si Cristo'y makita sa 'kin!
         '''),
     Hymnal(
         id: '389',
@@ -13333,7 +13333,7 @@ Kaluluwa ko'y aliwin
 Lungoy ko'y dinggin.
 
 Koro:
-Kristo! Kristo!
+Cristo! Cristo!
 Ako'y pakingggan
 Kung iba'y tinatawagan,
 H'wag akong iwan.
@@ -13395,13 +13395,13 @@ Christ, only Christ, here and eternally.
         title: "Hindi Ako, Kundi si Cristo",
         hymns: '''
 1
-Hindi ako, kundi si Kristo lamang
+Hindi ako, kundi si Cristo lamang
 Ang dapat na ibigi't itanghal;
 Dapat Siyang makita't mapakinggan
 Sa salita, gawa at isipan.
 
 2
-Hindi ako, kundi si Kristong hirag,
+Hindi ako, kundi si Cristong hirag,
 Ang saluha't lungkot ay paparam;
 Siya ang sapasa'y magpapagaan,
 At magtataboy sa katakutan.
@@ -13410,13 +13410,13 @@ At magtataboy sa katakutan.
 Walang salitang walang kabuluhan,
 Walang gulo na di kailangan;
 Wala ring "Ako" na masusumpungan,
-Kundi si Kristo't si Kristo lamang.
+Kundi si Cristo't si Cristo lamang.
 
 4
-Hindi ako, kundi si Kristo lamang,
+Hindi ako, kundi si Cristo lamang,
 Tumutustos sa bawa't kailangan;
 Siya lang ang lakas ko't kalusugan;
-Si Kristo lang, dito't kailanman.
+Si Cristo lang, dito't kailanman.
         '''),
     Hymnal(
       id: '393',
@@ -14099,7 +14099,7 @@ Malapit nang bumaba S'ya,
 Libu-libong anghel ang abay Niya,
 Palmang tagumpay ay dala.
 Hindi tatagal, maririnig mo na
-Ang kay Kristong ibabadya,
+Ang kay Cristong ibabadya,
 Aliping tapat gawa mo'y maganda,
 Sa 'yong Pangino'y magsaya.
 
@@ -14172,7 +14172,7 @@ Roma ang sa setro ay nag-mithi.
 Sa mga paang putik at bakal,
 Marupok, mahina't di tatagal;
 Anong kasunod na matatanghal?
-Ang pagdating ni Kristo kong mahal.
+Ang pagdating ni Cristo kong mahal.
         '''),
     Hymnal(
       id: '415',
@@ -14559,7 +14559,7 @@ Tulinan ang lakad, dalhin ang hirap
 Nang ating malasap, bihis na galak!
 
 3
-Ang kay Kristong kawal hukbong kalakhan
+Ang kay Cristong kawal hukbong kalakhan
 Ay nangapipisang lakip ang tibay;
 Sa pakikilaban at nang magdiwang,
 Nang pagtagumpayan madlang kaaway!
@@ -14617,7 +14617,7 @@ Koro:
 Sulong, kawal, bandila'y itanghal
 Patuloy sa pakikilaban;
 Sulong! sulong! at ipagsigawang
-Si Kristo ang ating Kapitan.
+Si Cristo ang ating Kapitan.
 
 2
 Lupigin agad likong pangwasak,

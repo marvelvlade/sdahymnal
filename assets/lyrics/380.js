@@ -25,7 +25,7 @@ Huwag, huwag kainipan!
 Kung ikaw ay makatagpo,
 Ng tinikman o ligamgam,
 Tibayan ang iyong puso,
-Si Kristo'y Siyang tularan.
+Si Cristo'y Siyang tularan.
 
 Koro:
 Hintay, maghintay mang mataman,

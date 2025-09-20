@@ -7,7 +7,7 @@ Ipang h'wag mawakawak?
 
 Koro:
 Tumatawag, tumatawag, 
-Si Kristong liyag,
+Si Cristong liyag,
 Sa makasalanang lahat.
 
 2
@@ -18,18 +18,18 @@ At lilinising tunay.
 
 Koro:
 Tumatawag, tumatawag, 
-Si Kristong liyag,
+Si Cristong liyag,
 Sa makasalanang lahat.
 
 3
-Kasalana'y isulit kay Jesus, 
+Kasalana'y isulit kay Jesus,
 H'wag magluwat, h'wag magluwat,
 Siya'y naghihintay na tibubos,
 Kaya lapit na agad.
 
 Koro:
 Tumatawag, tumatawag, 
-Si Kristong liyag,
+Si Cristong liyag,
 Sa makasalanang lahat.
 
 4
@@ -40,6 +40,6 @@ Magtatamo ng buhay.
 
 Koro:
 Tumatawag, tumatawag, 
-Si Kristong liyag,
+Si Cristong liyag,
 Sa makasalanang lahat.
 `;
