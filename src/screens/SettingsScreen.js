@@ -216,7 +216,7 @@ export default function SettingsScreen() {
       <Modal
         transparent
         visible={nicknameModalVisible}
-        animationType="slide"
+        animationType="fade"
         onRequestClose={() => setNicknameModalVisible(false)}
       >
         <View style={styles.modalOverlay}>

@@ -17,16 +17,13 @@ const AppLauncher = ({ navigation }) => {
       try {
         const done = await AsyncStorage.getItem('hasSetup');
 
-        // Only check update if connected to Wi-Fi
         const netState = await NetInfo.fetch();
         if (netState.type === 'wifi' && netState.isConnected) {
           const latestVersion = await fetchLatestVersion();
-          const lastFetchedVersion = await AsyncStorage.getItem('lastFetchedVersion');
 
-          // Compare current app version with latest from GitHub
-          if (latestVersion && CURRENT_VERSION !== latestVersion && latestVersion !== lastFetchedVersion) {
+          // ✅ Show modal until user updates
+          if (latestVersion && CURRENT_VERSION !== latestVersion) {
             setShowUpdateModal(true);
-            await AsyncStorage.setItem('lastFetchedVersion', latestVersion); // Update stored version
             return; // Stop navigation until modal is handled
           }
         }
@@ -51,7 +48,7 @@ const AppLauncher = ({ navigation }) => {
         console.log('Failed to fetch version.json');
         return null;
       }
-      const data = await response.json(); // ✅ parse JSON
+      const data = await response.json();
       return data.latestVersion?.trim() ?? null;
     } catch (err) {
       console.log('Error fetching latest version:', err);
